@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    align-items: center;
+    background-color: rgb(235, 238, 237);
+}
+
+.wrapper {
+    width: 380px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(24, 12, 12, 0.499);
+}
+
+.wrapper .title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    background: linear-gradient(-105deg, #008b8b, #6495ED, #00FFFF);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.wrapper form {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.wrapper form .field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    font-size: 17px;
+    outline: none;
+    transition: border-color 0.3s ease; /* Corrected the transition property */
+}
+
+.wrapper form .field input:focus {
+    border-color: #4158d0; /* Changed the border color directly on focus */
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+.wrapper form .field input:focus ~ label,
+.wrapper form .field input:valid ~ label {
+    top: 0%;
+    font-size: 15px;
+    color: #4158d0;
+    background: white;
+    transform: translateY(-50%);
+}
+
+.wrapper form .pass-link {
+    color: #4358d0;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.wrapper form .field input[type="submit"]{
+   color: #fff;
+   background: linear-gradient(-105deg, #008b8b, #6495ED, #00FFFF);  
+   font-size: 18px;
+   font-weight: 500;
+   border: none;
+   padding-left: none;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.wrapper form .field input[type="submit"]:active{
+    transform: scale(0.90);
+}
+
+.wrapper form .signup-link {
+    color: #4358d0;
+    margin-top: 15px;
+    text-align: center;
+}

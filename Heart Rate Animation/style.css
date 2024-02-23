@@ -10,7 +10,7 @@ body {
   svg path#line {
     fill: none;
     stroke: #e00000;
-    stroke-width: 2;
+    stroke-width: 1;
     stroke-linecap: butt;
     stroke-linejoin: round;
     stroke-miterlimit: 4;
